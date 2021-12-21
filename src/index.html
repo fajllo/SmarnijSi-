@@ -13,25 +13,27 @@
     <!-- tailwind css output style -->
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
-  <body class="dark">
+  <body class="">
     <header class="relative">
       <div
-        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75"
+        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75 dark:bg-black dark:text-white"
       >
         <div class="text-4xl font-licorice lg:pl-8 pl-4">Smarnij się</div>
-        <div class="hidden md:flex space-x-12 items-center">
-          <a href="#home" class="text-emerald-600 font-bold link">Blog</a>
-          <a href="#work" class="link font-bold">Subskrybuj</a>
-          <a href="#clients" class="font-bold link">Dowiedz się</a>
-          <a href="#hire" class="link font-bold">
+        <div
+          class="hidden md:space-x-12 space-y-12 items-center fixed top-0 bg-inherit right-0 w-1/2 h-screen z-20 flex flex-col mt-16 p-4 navigation md:static md:flex md:w-auto md:h-auto md:flex-row md:mt-0 md:shadow-none md:z-0 md:space-y-0 shadow-2xl"
+        >
+          <a href="#blog" class="text-emerald-600 font-bold link">Blog</a>
+          <a href="#sub" class="link font-bold">Subskrybuj</a>
+          <a href="#dowiedz" class="font-bold link">Dowiedz się</a>
+          <a href="#sklep" class="link font-bold">
             <button
               class="px-6 py-2 text-white bg-emerald-400 font-bold rounded-lg"
             >
-              Hire Me
+              Sklep
             </button>
           </a>
         </div>
-        <div class="md:hidden md:ml-auto">
+        <div class="md:hidden md:ml-auto menu">
           <svg
             width="26"
             height="18"
@@ -49,5 +51,7 @@
         </div>
       </div>
     </header>
+
+    <script src="app.js"></script>
   </body>
 </html>
