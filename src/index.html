@@ -3,18 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css output style -->
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
   <body class="dark">
-    <div class="">
-      <h1 class="text-red-600 text-4xl">Hello world!</h1>
-    </div>
-    <div class="">
-      <h1
-        class="text-red-600 bg-red-400 text-5xl dark:text-green-900 dark:bg-black"
+    <header class="relative">
+      <div
+        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75"
       >
-        Hello world!📁
-      </h1>
-    </div>
+        <div class="text-4xl font-licorice lg:pl-8 pl-4">Smarnij się</div>
+        <div class="hidden md:flex space-x-12 items-center">
+          <a href="#home" class="text-emerald-600 font-bold link">Blog</a>
+          <a href="#work" class="link font-bold">Subskrybuj</a>
+          <a href="#clients" class="font-bold link">Dowiedz się</a>
+          <a href="#hire" class="link font-bold">
+            <button
+              class="px-6 py-2 text-white bg-emerald-400 font-bold rounded-lg"
+            >
+              Hire Me
+            </button>
+          </a>
+        </div>
+        <div class="md:hidden md:ml-auto">
+          <svg
+            width="26"
+            height="18"
+            viewBox="0 0 26 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 17.5H0.25V14.6667H13V17.5ZM25.75
+            10.4167H0.25V7.58333H25.75V10.4167ZM25.75
+            3.33333H13V0.5H25.75V3.33333Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
