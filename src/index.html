@@ -13,14 +13,14 @@
     <!-- tailwind css output style -->
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
-  <body class="">
+  <body class=" bg-slate-100">
     <header class="relative">
       <div
-        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75 dark:bg-stone-600/85 dark:text-white"
+        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100 opacity-90 dark:bg-stone-600/85 dark:text-white z-40"
       >
         <div class="text-5xl font-licorice lg:pl-8 pl-4">Smarnij się</div>
         <div
-          class="font-montserrat hidden lg:space-x-10 space-y-12 bg-inherit lg:bg-none items-center fixed top-0 right-0 w-1/2 h-screen z-20 flex flex-col mt-20 p-2 navigation lg:static lg:flex lg:w-auto lg:h-auto lg:flex-row lg:mt-0 lg:shadow-none lg:z-0 lg:space-y-0 shadow-2xl text-lg"
+          class="font-montserrat hidden lg:space-x-10 space-y-12 bg-gray-100 opacity-95 lg:bg-none items-center fixed top-0 right-0 w-1/2 h-screen z-20 flex flex-col mt-20 p-2 navigation lg:static lg:flex lg:w-auto lg:h-auto lg:flex-row lg:mt-0 lg:shadow-none lg:z-0 lg:space-y-0 shadow-2xl text-lg"
         >
           <a href="#blog" class="text-emerald-600 link">Blog</a>
           <a href="#sub" class="link ">Subskrybuj</a>
@@ -47,148 +47,109 @@
       </div>
     </header>
 
-    <div class="mt-24"></div>
+    <div class="mt-24 lg:mt-28"></div>
 
     <!-- hero section -->
-    <div class="flex w-screen justify-center">
-      <section class=" grid  grid-cols-2 gap-2">
+    <div class="w-screen ">
+      <section class=" grid grid-cols-2 gap-2 px-2 md:grid-cols-3">
         <img
         src="https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
           
           alt=""
-          class="w-full h-96 object-cover border border-black block col-span-1"
+          class="w-full h-96 object-cover border border-black block md:col-span-2"
         />
         <div
-          class="w-full h-96 flex justify-center items-center p-12 bg-pink-100 border border-black text-lg text-pink-900 text-montserrat text-thin flex-col"
+          class="w-full h-96 flex justify-center items-center p-8 bg-pink-100 border border-black text-lg text-pink-900 text-montserrat text-thin flex-col "
         >
-          <h1 class="text-roboto text-bold self-start text-4xl text-purple-800">
+          <h1 class="text-roboto text-3xl text-bold self-start lg:text-6xl bg-gradient-to-r from-purple-400 to-pink-500  text-transparent bg-clip-text">
             Header
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          
-          </p>
+          <button class="relative self-start">
+            <div
+              class="absolute inset-x-0 h-full -bottom-1 -right-1 px-4 sm:px-10 py-2 bg-white border "
+            ></div>
+            <div
+              class="relative px-2 sm:px-10 py-4 bg-pink-200 border border-black text-white"
+            >
+              SKLEP
+            </div>
 
         </div>
         <!--  -->
 
         <div
-          class="w-full h-96 flex justify-center items-end text-right p-12 bg-green-100 border border-black text-lg text-green-900 text-montserrat text-thin flex-col"
+          class="w-full h-96 flex justify-center items-end text-right p-8 bg-yellow-100 border border-black text-lg text-green-900 text-montserrat text-thin flex-col"
         >
-          <h1 class="text-roboto text-bold self-end text-4xl text-blue-400">
+          <h1 class="text-roboto  text-3xl text-bold self-end lg:text-6xl bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">
             Header
           </h1>
-          <p>          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-           </p>
+          <button class="relative self-end">
+            <div
+              class="absolute inset-x-0 h-full -bottom-1 -left-1 px-4 sm:px-10 py-2 bg-white border "
+            ></div>
+            <div
+              class="relative  px-4 sm:px-10 py-2 bg-yellow-200 border border-black text-white"
+            >
+              BLOG
+            </div>
 
         </div>
         <img
         src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
         
         alt=""
-        class="w-full h-96 object-cover border border-black block"
+        class="w-full h-96 object-cover border border-black block md:col-span-2 "
       />
 
-        <div class="w-full h-96 border border-black col-span-2 bg-yellow-100 flex flex-col justify-center items-center px-12">
+        <div class="w-full h-96  col-span-2 md:col-span-3 bg-yellow-100 flex flex-col justify-center items-center px-12 relative">
+          <img src="https://images.unsplash.com/photo-1611255550543-b5ecb01dfddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80" alt="" class="absolute w-full  h-96 object-cover border border-black lg:col-start-1 lg:col-end-4 ">
+          <h1 class="text-6xl z-10 text-bold bg-gradient-to-r from-white to-emerald-500 text-transparent bg-clip-text">Beautiful You</h1>
 
-          <h1 class="text-2xl text-yellow-700">Header</h1>
-          <p class="text-amber-500">          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-           </p>
 
         </div>
       </section>
     </div>
-
-    <section class="text-black mt-24">
+<!-- cośtam section -->
+    <section class="text-black mt-12 md:mt-12">
       <div class="container px-5  mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
+        <div class="flex flex-col text-center w-full mb-8">
           <h1
-            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text"
           >
             Master Cleanse Reliac Heirloom
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
-          </p>
+
         </div>
 
         <div class="flex flex-wrap -m-4 text-center">
           <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
             <div class="relative">
               <div
-                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-yellow-200 border border-black"
               ></div>
               <div
-                class="relative px-12 py-2 bg-gradient-to-r from-indigo-200  to-indigo-300 border border-black"
+                class="relative px-12 py-2 bg-white border border-black"
               >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="text-purple-900 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                  <path
-                    d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"
-                  ></path>
-                </svg>
-                <h2 class="title-font font-medium text-3xl">
-                  2.7K
+              <p class="text-4xl">😍</p>
+                <h2 class="title-font font-medium text-3xl ">
+                  1.3K
                 </h2>
-                <p class="leading-relaxed">Downloads</p>
+                <p class="leading-relaxed">Users</p>
               </div>
             </div>
           </div>
           <!--  -->
 
           <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
-            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24"
-              >
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-              </svg>
-              <h2 class="title-font font-medium text-3xl text-gray-900">
-                1.3K
-              </h2>
-              <p class="leading-relaxed">Users</p>
-            </div> -->
+ 
             <div class="relative">
               <div
-                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-pink-200 border border-black"
               ></div>
               <div
-                class="relative px-12 py-2 bg-gradient-to-r from-cyan-200 to-blue-200 border border-black"
+                class="relative px-12 py-2 bg-white border border-black"
               >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="text-blue-900 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path
-                    d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"
-                  ></path>
-                </svg>
+              <p class="text-4xl">🥰</p>
                 <h2 class="title-font font-medium text-3xl ">
                   1.3K
                 </h2>
@@ -197,96 +158,152 @@
             </div>
           </div>
           <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
-            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24"
-              >
-                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                <path
-                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
-                ></path>
-              </svg>
-              <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
-              <p class="leading-relaxed">Files</p>
-            </div> -->
+
 
             <div class="relative">
               <div
-                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-emerald-200 border border-black"
               ></div>
               <div
-                class="relative px-12 py-2 bg-gradient-to-r from-yellow-200  to-yellow-300 border border-black"
+                class="relative px-12 py-2 bg-white border border-black"
               >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="text-yellow-600 w-12 h-12 mb-3 inline-block"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-                  <path
-                    d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
-                  ></path>
-                </svg>
+              <p class="text-4xl">🧚‍♀️</p>
                 <h2 class="title-font font-medium text-3xl ">
-                  74
+                  1.3K
                 </h2>
-                <p class="leading-relaxed">Files</p>
+                <p class="leading-relaxed">Users</p>
               </div>
             </div>
           </div>
           <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
-            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
-              <p class="leading-relaxed">Places</p>
-            </div> -->
+
             <div class="relative">
               <div
-                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-purple-200 border border-black"
               ></div>
               <div
-                class="relative px-12 py-2 bg-gradient-to-r from-emerald-200  to-teal-300 border border-black"
+                class="relative px-12 py-2 bg-white border border-black"
               >
-              <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="text-emerald-900 w-12 h-12 mb-3 inline-block"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <h2 class="title-font font-medium text-3xl ">46</h2>
-            <p class="leading-relaxed">Places</p>
+              <p class="text-4xl">👩🏻‍⚕️</p>
+                <h2 class="title-font font-medium text-3xl ">
+                  1.3K
+                </h2>
+                <p class="leading-relaxed">Users</p>
               </div>
-
+            </div>
           </div>
-        </div>
+    </section>
+
+
+    <section class="w-full gallery mt-12">
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 grid-flow-row-dense"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1620917618213-f9dbe72ddc80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+          class="w-full bg-nav h-72 lg:h-72 object-cover md:col-span-2"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1564278047230-a632a9d6acf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+          class="w-full bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1594341920954-201fe6d9255c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+          class="w-full  md:block bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1581514439794-f9777f7c22eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+          class="w-full  md:block bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1618330834871-dd22c2c226ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+          class="w-full  md:block bg-nav h-72 lg:h-72 object-cover md:col-span-2"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1590393802710-dbf451560939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80"
+          class="w-full  md:block bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1599305090598-fe179d501227?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80"
+          class="w-full  md:block bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1550159793-ac05f7255c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          class="w-full hidden md:block bg-nav h-72 lg:h-72 object-cover"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1573575154488-f88a60e170df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+          class="w-full hidden md:block md:col-span-2 bg-nav h-72 lg:h-72 object-cover"
+        />
       </div>
     </section>
+  </div>
+
+  <!-- contact form -->
+
+  <section class="text-gray-600 body-font relative mt-12">
+    <div class="absolute inset-0 bg-gray-300">
+      <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?q=Miko%C5%82%C3%B3w&t=&z=13&ie=UTF8&iwloc=&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+    </div>
+    <div class="container px-5 py-24 mx-auto flex">
+      <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button class="relative">
+          <div
+            class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+          ></div>
+          <div
+            class="relative px-12 py-2 bg-yellow-400 border border-black"
+          >
+            sklep
+          </div>
+        </button>
+        <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 SmarnijSię —
+        <a href="" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@sordyl.fsdr@gmail.com</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+
+      </span>
+    </div>
 
     <script src="app.js"></script>
   </body>
 </html>
+
+
