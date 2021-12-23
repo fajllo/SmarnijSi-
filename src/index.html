@@ -16,46 +16,276 @@
   <body class="">
     <header class="relative">
       <div
-        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75 dark:bg-black dark:text-white"
+        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100/75 dark:bg-stone-600/85 dark:text-white"
       >
         <div class="text-5xl font-licorice lg:pl-8 pl-4">Smarnij się</div>
         <div
-          class="hidden lg:space-x-10 space-y-12 items-center fixed top-0 bg-inherit right-0 w-1/2 h-screen z-20 flex flex-col mt-20 p-8 navigation lg:static lg:flex lg:w-auto lg:h-auto lg:flex-row lg:mt-0 lg:shadow-none lg:z-0 lg:space-y-0 shadow-2xl text-lg"
+          class="font-montserrat hidden lg:space-x-10 space-y-12 bg-inherit lg:bg-none items-center fixed top-0 right-0 w-1/2 h-screen z-20 flex flex-col mt-20 p-2 navigation lg:static lg:flex lg:w-auto lg:h-auto lg:flex-row lg:mt-0 lg:shadow-none lg:z-0 lg:space-y-0 shadow-2xl text-lg"
         >
-          <a href="#blog" class="text-emerald-600 font-bold link">Blog</a>
-          <a href="#sub" class="link font-bold">Subskrybuj</a>
-          <a href="#gallery" class="link font-bold">Galeria</a>
-          <a href="#dowiedz" class="font-bold link">O nas</a>
-          <a href="#sklep" class="link font-bold">
-            <button
-              class="px-12 py-2 text-white bg-gradient-to-r from-emerald-800 to-emerald-500 font-bold rounded-lg"
-            >
-              Sklep
+          <a href="#blog" class="text-emerald-600 link">Blog</a>
+          <a href="#sub" class="link ">Subskrybuj</a>
+          <a href="#gallery" class="link">Galeria</a>
+          <a href="#dowiedz" class="link">O nas</a>
+          <a href="#sklep" class="link">
+            <button class="relative">
+              <div
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+              ></div>
+              <div
+                class="relative px-12 py-2 bg-emerald-400 border border-black"
+              >
+                sklep
+              </div>
             </button>
           </a>
         </div>
         <div
-          class="lg:hidden lg:ml-auto menu text-4xl border-2 border-black rounded-md p-1 duration-500"
+          class="lg:hidden lg:ml-auto menu text-4xl rounded-md p-1 duration-500"
         >
-          <!-- zamiana svg na ikonke -->
-          ⌘
-          <!-- <svg
-            width="26"
-            height="18"
-            viewBox="0 0 26 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13 17.5H0.25V14.6667H13V17.5ZM25.75
-            10.4167H0.25V7.58333H25.75V10.4167ZM25.75
-            3.33333H13V0.5H25.75V3.33333Z"
-              fill="black"
-            />
-          </svg> -->
+          ❖
         </div>
       </div>
     </header>
+
+    <div class="mt-24"></div>
+
+    <!-- hero section -->
+    <div class="flex w-screen justify-center">
+      <section class=" grid  grid-cols-2 gap-2">
+        <img
+        src="https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
+          
+          alt=""
+          class="w-full h-96 object-cover border border-black block col-span-1"
+        />
+        <div
+          class="w-full h-96 flex justify-center items-center p-12 bg-pink-100 border border-black text-lg text-pink-900 text-montserrat text-thin flex-col"
+        >
+          <h1 class="text-roboto text-bold self-start text-4xl text-purple-800">
+            Header
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          
+          </p>
+
+        </div>
+        <!--  -->
+
+        <div
+          class="w-full h-96 flex justify-center items-end text-right p-12 bg-green-100 border border-black text-lg text-green-900 text-montserrat text-thin flex-col"
+        >
+          <h1 class="text-roboto text-bold self-end text-4xl text-blue-400">
+            Header
+          </h1>
+          <p>          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+           </p>
+
+        </div>
+        <img
+        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80"
+        
+        alt=""
+        class="w-full h-96 object-cover border border-black block"
+      />
+
+        <div class="w-full h-96 border border-black col-span-2 bg-yellow-100 flex flex-col justify-center items-center px-12">
+
+          <h1 class="text-2xl text-yellow-700">Header</h1>
+          <p class="text-amber-500">          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+           </p>
+
+        </div>
+      </section>
+    </div>
+
+    <section class="text-black mt-24">
+      <div class="container px-5  mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Master Cleanse Reliac Heirloom
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+            gentrify, subway tile poke farm-to-table. Franzen you probably
+            haven't heard of them man bun deep jianbing selfies heirloom prism
+            food truck ugh squid celiac humblebrag.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
+            <div class="relative">
+              <div
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+              ></div>
+              <div
+                class="relative px-12 py-2 bg-gradient-to-r from-indigo-200  to-indigo-300 border border-black"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="text-purple-900 w-12 h-12 mb-3 inline-block"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                  <path
+                    d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"
+                  ></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl">
+                  2.7K
+                </h2>
+                <p class="leading-relaxed">Downloads</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
+            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">
+                1.3K
+              </h2>
+              <p class="leading-relaxed">Users</p>
+            </div> -->
+            <div class="relative">
+              <div
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+              ></div>
+              <div
+                class="relative px-12 py-2 bg-gradient-to-r from-cyan-200 to-blue-200 border border-black"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="text-blue-900 w-12 h-12 mb-3 inline-block"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path
+                    d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"
+                  ></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl ">
+                  1.3K
+                </h2>
+                <p class="leading-relaxed">Users</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
+            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+              <p class="leading-relaxed">Files</p>
+            </div> -->
+
+            <div class="relative">
+              <div
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+              ></div>
+              <div
+                class="relative px-12 py-2 bg-gradient-to-r from-yellow-200  to-yellow-300 border border-black"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="text-yellow-600 w-12 h-12 mb-3 inline-block"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                  <path
+                    d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
+                  ></path>
+                </svg>
+                <h2 class="title-font font-medium text-3xl ">
+                  74
+                </h2>
+                <p class="leading-relaxed">Files</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-1/2">
+            <!-- <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-emerald-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+              <p class="leading-relaxed">Places</p>
+            </div> -->
+            <div class="relative">
+              <div
+                class="absolute inset-x-0 h-full -bottom-1 -right-1 px-12 py-2 bg-black border border-black"
+              ></div>
+              <div
+                class="relative px-12 py-2 bg-gradient-to-r from-emerald-200  to-teal-300 border border-black"
+              >
+              <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="text-emerald-900 w-12 h-12 mb-3 inline-block"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl ">46</h2>
+            <p class="leading-relaxed">Places</p>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>
