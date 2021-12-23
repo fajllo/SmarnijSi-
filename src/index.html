@@ -16,16 +16,17 @@
   <body class=" bg-slate-100">
     <header class="relative">
       <div
-        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100 opacity-90 dark:bg-stone-600/85 dark:text-white z-40"
+        class="flex justify-between items-center px-8 py-4 md:px-14 lg:px-24 fixed top-0 left-0 right-0 mt-0 w-screen md:pl-0 shadow-lg bg-gray-100 opacity-95 dark:bg-stone-600/85 dark:text-white z-40"
       >
         <div class="text-5xl font-licorice lg:pl-8 pl-4">Smarnij się</div>
         <div
           class="font-montserrat hidden lg:space-x-10 space-y-12 bg-gray-100 opacity-95 lg:bg-none items-center fixed top-0 right-0 w-1/2 h-screen z-20 flex flex-col mt-20 p-2 navigation lg:static lg:flex lg:w-auto lg:h-auto lg:flex-row lg:mt-0 lg:shadow-none lg:z-0 lg:space-y-0 shadow-2xl text-lg"
         >
           <a href="#blog" class="text-emerald-600 link">Blog</a>
-          <a href="#sub" class="link ">Subskrybuj</a>
-          <a href="#gallery" class="link">Galeria</a>
           <a href="#dowiedz" class="link">O nas</a>
+          <a href="#gallery" class="link">Galeria</a>
+         
+          <a href="#contact" class="link ">Kontakt</a>
           <a href="#sklep" class="link">
             <button class="relative">
               <div
@@ -40,7 +41,7 @@
           </a>
         </div>
         <div
-          class="lg:hidden lg:ml-auto menu text-4xl rounded-md p-1 duration-500"
+          class="lg:hidden lg:ml-auto menu text-4xl rounded-md p-1 duration-500 "
         >
           ❖
         </div>
@@ -50,7 +51,7 @@
     <div class="mt-24 lg:mt-28"></div>
 
     <!-- hero section -->
-    <div class="w-screen ">
+    <div class="w-screen " id="dowiedz">
       <section class=" grid grid-cols-2 gap-2 px-2 md:grid-cols-3">
         <img
         src="https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80"
@@ -69,7 +70,7 @@
               class="absolute inset-x-0 h-full -bottom-1 -right-1 px-4 sm:px-10 py-2 bg-white border "
             ></div>
             <div
-              class="relative px-2 sm:px-10 py-4 bg-pink-200 border border-black text-white"
+              class="relative pl-2 pr-8 sm:px-10 py-2 bg-pink-200 border border-black text-white"
             >
               SKLEP
             </div>
@@ -88,7 +89,7 @@
               class="absolute inset-x-0 h-full -bottom-1 -left-1 px-4 sm:px-10 py-2 bg-white border "
             ></div>
             <div
-              class="relative  px-4 sm:px-10 py-2 bg-yellow-200 border border-black text-white"
+              class="relative  pr-2 pl-8 sm:px-10 py-2 bg-yellow-200 border border-black text-white"
             >
               BLOG
             </div>
@@ -195,7 +196,7 @@
     </section>
 
 
-    <section class="w-full gallery mt-12">
+    <section class="w-full gallery mt-12" id="gallery">
 
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 grid-flow-row-dense"
@@ -242,7 +243,7 @@
 
   <!-- contact form -->
 
-  <section class="text-gray-600 body-font relative mt-12">
+  <section class="text-gray-600 body-font relative mt-12" id="contact"> 
     <div class="absolute inset-0 bg-gray-300">
       <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?q=Miko%C5%82%C3%B3w&t=&z=13&ie=UTF8&iwloc=&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
     </div>

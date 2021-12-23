@@ -1010,6 +1010,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-none {
+  background-image: none;
+}
+
 .from-indigo-200 {
   --tw-gradient-from: #c7d2fe;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(199 210 254 / 0));
@@ -1236,6 +1240,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-center {
